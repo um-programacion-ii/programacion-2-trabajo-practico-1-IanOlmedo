@@ -8,8 +8,12 @@ public class Camion extends Vehiculo {
         this.tieneAcoplado = tieneAcoplado;
     }
 
-    public boolean tieneAcoplado() {
+    public boolean isTieneAcoplado() {
         return tieneAcoplado;
+    }
+
+    public void setTieneAcoplado(boolean tieneAcoplado) {
+        this.tieneAcoplado = tieneAcoplado;
     }
 
     @Override
