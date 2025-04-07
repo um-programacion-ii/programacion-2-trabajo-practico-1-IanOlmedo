@@ -1,4 +1,5 @@
 package Trabajo_1_Pro2.src.Vehiculos;
+import java.util.ArrayList;
 
 public class Vehiculo {
     private String patente;
@@ -53,4 +54,13 @@ public class Vehiculo {
 
     }
 
+    public static Vehiculo buscarPorPatente(ArrayList<Vehiculo> lista, String patente) {
+        for (Vehiculo v : lista) {
+            if (v.getPatente().equalsIgnoreCase(patente)) {
+                System.out.println("El vehiculo con la patente: "+patente+" es...");
+                return v;
+            }
+        }
+        return null; // no esta el cehiculoo
+    }
 }
