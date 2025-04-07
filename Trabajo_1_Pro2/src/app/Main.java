@@ -1,5 +1,5 @@
 package Trabajo_1_Pro2.src.app;
-
+import Trabajo_1_Pro2.src.Vehiculos.VehiculoPrinter;
 import Trabajo_1_Pro2.src.Vehiculos.Vehiculo;
 
 public class Main {
@@ -10,11 +10,9 @@ public class Main {
         Vehiculo tcross = new Vehiculo("AA643DB", "Volkswagen", 2022, 800);
 
 
-        fordKa.mostrarInformacion();
-        System.out.println();
-        fiesta.mostrarInformacion();
-        System.out.println();
-        tcross.mostrarInformacion();
-
+        VehiculoPrinter printer = new VehiculoPrinter();
+        printer.imprimir(fordKa);
+        printer.imprimir(fiesta);
+        printer.imprimir(tcross);
     }
 }
