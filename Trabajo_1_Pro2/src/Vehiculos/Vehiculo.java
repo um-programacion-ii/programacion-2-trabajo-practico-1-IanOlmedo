@@ -1,4 +1,5 @@
 package Trabajo_1_Pro2.src.Vehiculos;
+import java.time.Year;
 import java.util.ArrayList;
 
 public class Vehiculo {
@@ -8,11 +9,26 @@ public class Vehiculo {
     private double capacidadCargaKg;
 
     public Vehiculo(String patente, String marca, int anio, double capacidadCargaKg) {
+        if (patente == null || patente.trim().isEmpty()) {
+            throw new IllegalArgumentException("La patente no puede ser nula ni vacía.");
+        }
+
+        int anioActual = Year.now().getValue();
+        if (anio < 1900 || anio > anioActual) {
+            throw new IllegalArgumentException("El año debe estar entre 1900 y " + anioActual + ".");
+        }
+
+        if (capacidadCargaKg <= 0) {
+            throw new IllegalArgumentException("La capacidad de carga debe ser positiva.");
+        }
+
         this.patente = patente;
         this.marca = marca;
         this.anio = anio;
         this.capacidadCargaKg = capacidadCargaKg;
     }
+
+
 
     public String getPatente() {
         return patente;

@@ -12,7 +12,7 @@ public class Main {
         vehiculos.add(new Vehiculo("EKZ731", "Ford", 2004, 300));
         vehiculos.add(new Vehiculo("TTD673", "Ford", 2014, 500));
         vehiculos.add(new Vehiculo("AA643DB", "Volkswagen", 2022, 800));
-        vehiculos.add(new Camion("STY273", "Mercedez", 2009, 1500, true));
+        vehiculos.add(new Camion("STY273", "Mercedez", 2001, 1500, true));
         vehiculos.add(new Auto("JFZ738", "Volkswagen", 2011, 600, 5));
 
         VehiculoPrinter printer = new VehiculoPrinter();
