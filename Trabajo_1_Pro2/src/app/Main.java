@@ -22,7 +22,7 @@ public class Main {
             System.out.println("--------------------");
         }
 
-        Vehiculo encontrado = Vehiculo.buscarPorPatente(vehiculos, "AA63DB");
+        Vehiculo encontrado = Vehiculo.buscarPorPatente(vehiculos, "EKZ731");
 
         if (encontrado != null) {
             printer.imprimir(encontrado);
