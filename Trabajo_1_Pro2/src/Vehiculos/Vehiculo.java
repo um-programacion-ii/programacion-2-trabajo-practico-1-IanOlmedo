@@ -1,6 +1,7 @@
 package Trabajo_1_Pro2.src.Vehiculos;
 import java.time.Year;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Vehiculo {
     private String patente;
@@ -70,13 +71,28 @@ public class Vehiculo {
 
     }
 
-    public static Vehiculo buscarPorPatente(ArrayList<Vehiculo> lista, String patente) {
-        for (Vehiculo v : lista) {
-            if (v.getPatente().equalsIgnoreCase(patente)) {
-                System.out.println("El vehiculo con la patente: "+patente+" es...");
-                return v;
+    public static Vehiculo buscarPorPatente(ArrayList<Vehiculo> lista) {
+        Scanner scanner = new Scanner(System.in);
+
+        while (true) {
+            System.out.print("---> Ingrese una patente para buscar (o escriba 'salir'): ");
+            String input = scanner.nextLine().trim();
+
+            if (input.equalsIgnoreCase("salir")) {
+                System.out.println("--> Saliendo del sistema de búsqueda.");
+                return null;
             }
+
+            for (Vehiculo v : lista) {
+                if (v.getPatente().equalsIgnoreCase(input)) {
+                    System.out.println("El vehículo con la patente '" + input + "' es:");
+                    return v;
+                }
+            }
+
+            System.out.println("No se encontró ningún vehículo con esa patente.");
         }
-        return null; // no esta el cehiculoo
     }
 }
+
+
