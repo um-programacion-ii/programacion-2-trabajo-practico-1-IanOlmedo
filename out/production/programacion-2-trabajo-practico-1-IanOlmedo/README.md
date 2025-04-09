@@ -1,13 +1,14 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/-JQrLgaz)
 # 🧠 Trabajo Práctico: Sistema de Gestión de Vehículos (Java + SOLID + GitHub)
 
-##  Autor
+
+## 👤 Autor
 
 - **Nombre y Apellido**: *Ian Olmedo*
 
 ---
 
-## Requisitos Previos
+## 🛠️ Requisitos Previos
 
 - Java JDK 8 o superior instalado
 - IDE recomendado: IntelliJ IDEA
@@ -15,7 +16,7 @@
 
 ---
 
-## Instrucciones para Compilar y Ejecutar
+## 🚀 Instrucciones para Compilar y Ejecutar
 
 1. Clonar el repositorio:
    ```bash
@@ -26,16 +27,19 @@
    ```bash
    cd Trabajo_1_Pro2/src
    
-3. Compilar archivo src.
+3. Compilar compilar archivo src.
 ---
 
-## Ejemplos de Uso
+## 💡 Ejemplos de Uso
 
 - Al ejecutar el programa, se mostrarán los vehículos cargados.
-- Y te segerira buscar vehiculos segun su patente
+- Podés buscar vehículos por patente escribiendo una en consola:
   ```bash
-- En caso de que el no exista el vehiculo en el sistema se mostrará un mensaje "No se encontró ningún vehículo con esa patente" y te dejara volver a escribir otra patente.
+  ---> Ingrese una patente para buscar (o escriba 'salir'): EKZ731
+- En caso de que el no exista el vehiculo en el sistema se mostrará un mensaje "No se encontró ningún vehículo con esa patente".
 - Si encuentra el Vehiculo le mostrara el vehiculo con la patente buscada y caracteristicas del mismo.
+
+   Process finished with exit code 0
 
 ---
 
