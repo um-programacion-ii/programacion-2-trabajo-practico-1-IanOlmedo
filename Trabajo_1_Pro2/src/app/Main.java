@@ -22,12 +22,10 @@ public class Main {
             System.out.println("--------------------");
         }
 
-        Vehiculo encontrado = Vehiculo.buscarPorPatente(vehiculos, "EKZ731");
+        Vehiculo encontrado = Vehiculo.buscarPorPatente(vehiculos);
 
         if (encontrado != null) {
             printer.imprimir(encontrado);
-        } else {
-            System.out.println("No se encontró ningún vehículo con esa patente.");
         }
     }
 }
